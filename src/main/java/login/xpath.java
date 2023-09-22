@@ -10,7 +10,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import configProvider.ConfigFileReader;
 
 public class xpath extends ConfigFileReader{
-public static RemoteWebDriver driver;
+	
+	  public static RemoteWebDriver driver;
+	//  public static ChromeDriver driver;  	 
 //public static ConfigFileReader config = new ConfigFileReader();
 public String acceptAllCookies = "(//button/div[contains(text(),'All')])[2]";
 //public String signInBtn = "//span[text()='Sign in']";

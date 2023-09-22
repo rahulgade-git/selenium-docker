@@ -3,17 +3,22 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
 public class ConfigFileReader {
-	
 	private Properties properties;
 	private final String propertyFilePath= "Config//config.properties";
 
 	
 	public ConfigFileReader(){
-		BufferedReader reader;
+		BufferedReader reader;		
 		try {
+			
 			reader = new BufferedReader(new FileReader(propertyFilePath));
 			properties = new Properties();
 			try {
