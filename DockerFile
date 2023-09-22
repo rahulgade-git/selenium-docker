@@ -1,4 +1,4 @@
 FROM openjdk:20
 EXPOSE 8080
 COPY target/docker-selenium.jar docker-selenium.jar
-ENTRYPOINT ["java","-jar","/docker-selenium.jar"]
+RUN ["java","-jar","/docker-selenium.jar"]
