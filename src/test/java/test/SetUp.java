@@ -17,7 +17,7 @@ public void launcher() throws Exception {
 	create = new AccountCreation();
 	create.signin();
 	authenticate = new AuthenticateAccount();
-	authenticate.enterMobileNumber();
+	//authenticate.enterMobileNumber();
 	//authenticate.openCodeReader();
 	//authenticate.enterVerificationCode();  
 }     
