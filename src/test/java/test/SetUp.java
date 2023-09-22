@@ -13,7 +13,7 @@ public class SetUp extends xpath{
 	static AuthenticateAccount authenticate;
 @Test             
 public void launcher() throws Exception {      
-	launch = new LaunchGoogle();
+	//launch = new LaunchGoogle();
 	create = new AccountCreation();
 	create.signin();
 	authenticate = new AuthenticateAccount();
